@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              maincolor: "#f7f5f1",
+            },
+            fontFamily: {
+              nunito: ["Nunito"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Nadya Gusdita - Portfolio</title>
+  </head>
+
+  <body class="bg-maincolor font-nunito">
+    <nav
+      class="flex justify-center flex-col md:flex-row lg:flex-row md:mx-10 lg:mx-20 pt-5"
+    >
+      <h2 class="font-nunito text-2xl font-bold m-auto md:ml-6 lg:flex-grow">
+        Nadya Gusdita
+      </h2>
+      <ul class="flex justify-evenly align-middle mt-4 md:mt-0 lg:mt-0">
+        <li
+          class="hover:bg-slate-900 hover:text-white duration-200 px-3 py-2 rounded-lg md:mx-2 lg:mx-5"
+        >
+          <a href="#about">About</a>
+        </li>
+        <li
+          class="hover:bg-slate-900 hover:text-white duration-200 px-3 py-2 rounded-lg md:mx-2 lg:mx-5"
+        >
+          <a href="#education">Education</a>
+        </li>
+        <li
+          class="hover:bg-slate-900 hover:text-white duration-200 px-3 py-2 rounded-lg md:mx-2 lg:mx-5"
+        >
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li
+          class="hover:bg-slate-900 hover:text-white duration-200 px-3 py-2 rounded-lg md:mx-2 lg:mx-5"
+        >
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header
+      class="flex flex-col lg:flex-row lg:gap-20 md:mx-24 justify-center items-center mt-10 pb-10 px-5"
+    >
+      <figure class="lg:order-3">
+        <img
+          src="img/nadyagusdita.jpg"
+          alt="Nadya Gusdita Photo"
+          class="rounded-full max-w-[300px] shadow-md"
+        />
+      </figure>
+      <div class="lg:flex lg:flex-col">
+        <h1 class="font-nunito text-4xl font-bold mt-8 order-2 mb-2">
+          Hi. I'm Nadya Gusdita. <br />
+          A Information Systems Student.
+        </h1>
+        <p class="sub-heading order-3 text-lg">
+          Welcome to my portfolio. I invite you to explore my site to get a
+          better understanding of my specialities.
+        </p>
+      </div>
+    </header>
+
+    <section
+      class="flex flex-col lg:flex-row justify-evenly items-center bg-white px-6 pb-10"
+      id="about"
+    >
+      <div class="pt-10 max-w-[250px]">
+        <img src="img/about-illustration.svg" alt="Illustration Intro" />
+      </div>
+      <div class="mt-8 text-justify max-w-lg">
+        <b>Hallo.</b> Saya Nadya Gusdita merupakan seorang mahasiswa S-1 yang
+        saat ini menempuh perkuliahan di Universitas Andalas dengan Program
+        Studi Sistem Informasi Angkatan 2019 yang saat ini berada di tahun ke-4
+        perkuliahan. Saya memiliki passion di bidang pemrograman, terutama
+        <i>web development.</i> <br />
+        Saya memiliki pengalaman magang sebagai
+        <i>web programmer</i> di Dinas Komunikasi, Statistik, dan Informatika
+        Provinsi Sumatera Barat dan pernah menempuh pembelajaran di Program
+        Studi Independen Bersertifikat Ruangguru X Kampus Merdeka dengan
+        <i>learning path Backend Engineering</i>.
+      </div>
+    </section>
+
+    <section id="education">
+      <h1 class="text-center text-3xl font-bold mt-10 mb-10">Education</h1>
+
+      <div class="education-items">
+        <div
+          class="card bg-white rounded-lg shadow-md max-w-xs hover:scale-105 transition duration-300"
+        >
+          <h2 class="font-bold">Universitas Andalas</h2>
+          <p>2019 - Sekarang</p>
+        </div>
+
+        <div
+          class="card bg-white rounded-lg shadow-md max-w-xs hover:scale-105 transition duration-300"
+        >
+          <h2 class="font-bold">SMAN 1 Pariaman</h2>
+          <p>2016 - 2019</p>
+        </div>
+
+        <div
+          class="card bg-white rounded-lg shadow-md max-w-xs hover:scale-105 transition duration-300"
+        >
+          <h2 class="font-bold">SMPN 1 Pariaman</h2>
+          <p>2013 - 2016</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-14 pb-14 p-8 bg-white" id="portfolio">
+      <h1 class="text-center text-3xl font-bold w-full mt-4">Portfolio</h1>
+      <p class="text-center mb-12 w-full">
+        Take a look at some of my portfolio below
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-1.png" alt="Edupen" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">EDUPEN: Online Writing Course</h2>
+            <p class="text-[15px]">
+              Dikembangkan sebagai bagian dari kompetisi Hackathon Lustrum II
+              FTI UNAND, EDUPEN merupakan website kursus menulis online yang
+              memberikan kemudahan dalam meningkatkan kemampuan menulis secara
+              online. Website ini dibuat menggunakan bahasa pemrograman PHP dan
+              Bootstrap 5.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-2.png" alt="Desa Wisata Apar" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">Desa Wisata Apar Official Website</h2>
+            <p class="text-[15px]">
+              Sebagai bagian dari program Kuliah Kerja Nyata, saya mengembangkan
+              situs web untuk Desa Wisata Apar Pariaman. Website ini menampilkan
+              warisan budaya dan keindahan alam desa untuk menarik pengunjung
+              dan mempromosikan pariwisata berkelanjutan. Website ini dibuat
+              menggunakan bahasa pemrograman PHP dan Bootstrap 5.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-3.png" alt="Tanah Lapang" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">
+              Kelurahan Tanah Lapang Official Website
+            </h2>
+            <p class="text-[15px]">
+              Website ini merupakan proyek tim yang dikembangkan oleh LDKOM
+              (Laboratorium Komputasi Dasar) sebagai proyek pengabdian
+              masyarakat. Situs web ini berfungsi sebagai platform online yang
+              menyediakan informasi dan sumber daya berharga bagi warga
+              Kelurahan Tanah Lapang. Website ini dibuat menggunakan bahasa
+              pemrograman PHP dan Bootstrap 5
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-4.png" alt="KPID Sumbar" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">KPID Sumatera Barat Official Website</h2>
+            <p class="text-[15px]">
+              Melakukan desain ulang user interface website KPID Sumbar dengan
+              desain yang menarik dan mengembangkan fitur baru yaitu polling
+              kepuasan masyarakat terhadap kinerja KPID Sumbar. Website ini
+              dibuat dengan menggunakan CodeIgniter 3 dan Bootstrap 5.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-5.jpg" alt="KPID Sumbar" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">BEM KM FTI Official Website</h2>
+            <p class="text-[15px]">
+              Website BEM KM FTI merupakan proyek kelompok yang dibuat sebagai
+              bagian dari mata kuliah Change Management dan IT Project. Website
+              ini menyajikan informasi terkini tentang kegiatan, acara, dan
+              proyek yang dilakukan oleh BEM KM FTI. Website ini dibuat dengan
+              menggunakan PHP dan Bootstrap 5.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden lg:max-w-sm md:max-w-sm sm:max-w-[300px] hover:scale-105 transition duration-500 card-project"
+        >
+          <img src="img/project-6.jpg" alt="KPID Sumbar" />
+          <div class="caption p-6">
+            <h2 class="font-bold mb-2">JuMpa: Jual Sampah</h2>
+            <p class="text-[15px]">
+              Jual Sampah adalah aplikasi android yang dikembangkan sebagai
+              proyek akhir tim untuk mata kuliah Pemrograman Mobile. Aplikasi
+              ini memungkinkan pengguna untuk dengan mudah menjual berbagai
+              jenis sampah. Pengguna dapat dengan cepat menemukan pembeli
+              terdekat dan mengatur transaksi. Aplikasi ini dibuat menggunakan
+              Android Studio dan Java.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white" id="footer">
+      <div class="flex justify-center pt-20 pb-4 gap-3">
+        <a href="https://wa.link/1bx8hw" title="WhatsApp" target="_blank">
+          <img
+            src="img/whatsapp.png"
+            alt="WhatsApp"
+            width="40"
+            class="bg-white rounded-full shadow-lg"
+          />
+        </a>
+        <a
+          href="https://github.com/nadyagusdita"
+          title="Github"
+          target="_blank"
+        >
+          <img
+            src="img/github.png"
+            alt="Github"
+            width="40"
+            class="bg-white rounded-full shadow-lg"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nadyagusdita/"
+          title="LinkedIn"
+          target="_blank"
+        >
+          <img
+            src="img/linkedin.png"
+            alt="LinkedIn"
+            width="40"
+            class="bg-white rounded-full shadow-lg"
+          />
+        </a>
+      </div>
+      <p class="text-center pb-8">Copyright 2022 - 2023 &copy; Nadya Gusdita</p>
+    </footer>
+  </body>
+</html>
